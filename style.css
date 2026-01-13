@@ -1,0 +1,241 @@
+/* ===============================
+   RESET & DASAR
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #f4f6fb;
+  color: #333;
+  padding-bottom: 70px; /* ruang untuk bottom nav */
+}
+
+/* ===============================
+   HEADER / HERO
+================================ */
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 45px 20px 50px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.hero h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+/* ===============================
+   HEADER HALAMAN (BERITA / GALERI)
+================================ */
+.page-header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.page-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ===============================
+   MENU GRID (BERANDA)
+================================ */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+  margin-top: -25px;
+}
+
+.menu-card {
+  background: white;
+  padding: 25px 10px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  font-weight: 600;
+  font-size: 14px;
+  color: #2575fc;
+  transition: 0.2s;
+}
+
+.menu-card:active {
+  transform: scale(0.97);
+}
+
+/* ===============================
+   SAMBUTAN / PROFIL PENGURUS
+================================ */
+.leader {
+  background: white;
+  margin: 10px 20px;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.leader img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-top: -55px;
+  border: 5px solid white;
+  background: #eee;
+}
+
+.leader h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.leader p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ===============================
+   BERITA (LIST)
+================================ */
+.news {
+  padding: 20px;
+}
+
+.news h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.news-item {
+  background: white;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.news-text {
+  padding: 12px;
+}
+
+.news-text h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.news-text p {
+  font-size: 13px;
+  color: #555;
+}
+
+.news-text span {
+  font-size: 11px;
+  color: #999;
+}
+
+/* ===============================
+   GALERI
+================================ */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+   LOGIN
+================================ */
+.login-box {
+  max-width: 320px;
+  margin: 100px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 15px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+}
+
+.login-box button.admin {
+  background: #111;
+}
+
+/* ===============================
+   BOTTOM NAVIGATION
+================================ */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #666;
+  font-size: 11px;
+  text-align: center;
+}
+
+.bottom-nav a.active {
+  color: #2575fc;
+  font-weight: 600;
+}
